@@ -1,0 +1,63 @@
+# Comms compliance rubric (v0) — insurance/comms flavored.
+#
+# NOTE: These criteria are illustrative compliance *heuristics* for evaluating
+# outbound SMS/email marketing and servicing messages. They are NOT legal
+# advice and do not constitute a complete compliance program.
+
+id: comms_compliance_v0
+name: Comms Compliance v0
+description: >-
+  A starter rubric for evaluating outbound SMS and email messages against common
+  marketing-comms compliance expectations (opt-out, sender identity, honest
+  claims, consent, disclosures, and plain language).
+
+criteria:
+  - id: opt_out_present
+    title: Clear opt-out mechanism
+    description: >-
+      The message provides a clear, working way to opt out of future messages
+      (e.g. "Reply STOP to unsubscribe" for SMS, or an unsubscribe link/footer
+      for email).
+    severity: critical
+    applies_to: [sms, email]
+
+  - id: sender_identified
+    title: Sender clearly identified
+    description: >-
+      The sending brand or company is clearly identified in the message so the
+      recipient knows who is contacting them.
+    severity: major
+    applies_to: []  # all channels
+
+  - id: no_misleading_claims
+    title: No misleading or deceptive claims
+    description: >-
+      The message contains no false, deceptive, or exaggerated claims and no
+      manufactured urgency (e.g. "guaranteed", "risk-free", "act now",
+      "claim your prize").
+    severity: critical
+    applies_to: []  # all channels
+
+  - id: consent_language
+    title: References prior consent / relationship
+    description: >-
+      Where appropriate, the message references an established relationship or
+      prior consent (e.g. "you signed up", "as a customer", "your policy").
+    severity: major
+    applies_to: []  # all channels
+
+  - id: jurisdiction_disclosure
+    title: Required disclosures present (email)
+    description: >-
+      Email includes required disclosures such as a physical postal address,
+      in the spirit of CAN-SPAM style requirements.
+    severity: major
+    applies_to: [email]
+
+  - id: reading_level_ok
+    title: Plain, non-manipulative language
+    description: >-
+      The message uses plain, readable language and avoids manipulative
+      formatting such as excessive ALL CAPS or repeated exclamation marks.
+    severity: minor
+    applies_to: []  # all channels
